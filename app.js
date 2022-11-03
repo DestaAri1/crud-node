@@ -4,14 +4,14 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var db = require('./database/conn');
+var db = require('./database/conn.js');
 var flash = require('express-flash');
 var session = require('express-session');
 var methodOverride = require('method-override');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var contentRouter = require('./routes/content');
+var indexRouter = require('./routes/index.js');
+var usersRouter = require('./routes/users.js');
+var contentRouter = require('./routes/content.js');
 
 var app = express();
 
